@@ -4,5 +4,109 @@
 /** GENERAL **/
 * {
   box-sizing: border-box;
-  background-color: #7b7b7b;
+  background-color: #dddddd;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  padding: 0 5%;
+  margin: 0 auto;
+  /* Clearfix hack */
+}
+.container:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+ul.menu {
+  list-style: none;
+  padding: 0;
+  /** --------------------------------------- **/
+}
+
+/** TYPOGRAPHY **/
+body {
+  color: #000;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #dfb52e;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #5c5c5c;
+}
+
+.button-std {
+  border-radius: 0.2em;
+  padding: 0.5em 1em;
+  margin: 0.6em;
+  display: inline-block;
+  transition: all 0.5s;
+  background-color: #dfb52e;
+  border: 1px solid #434343;
+  color: #fff;
+}
+
+.button-ghost {
+  border-radius: 0.2em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  display: inline-block;
+  transition: all 0.5s;
+  background-color: #fff;
+  border: 1px solid #5c5c5c;
+  color: #5c5c5c;
+}
+
+/** --------------------------------------- **/
+/** HEADER **/
+.logo {
+  float: left;
+  width: 100%;
+  max-width: 180px;
+  padding: 1rem 0;
+  transition: all 0.2s;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+
+header {
+  background-color: #6cde4c;
+}
+
+/** --------------------------------------- **/
+/** NAVIGATION **/
+nav {
+  float: right;
+}
+
+.menu-item {
+  float: left;
+  margin-right: 0.5em;
+  position: relative;
+}
+.menu-item a {
+  display: block;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.menu-item a:hover {
+  color: #fff;
+}
+.menu-item.current-item a {
+  color: #5c5c5c;
+  border-bottom: 1px solid #dfb52e;
 }
