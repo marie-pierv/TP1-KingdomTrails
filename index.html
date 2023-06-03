@@ -1,38 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-CA">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<title>Exercices sass</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+	<script src="https://use.fontawesome.com/fa937ec931.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="style/css/style.css"/>
-    <title>Document</title>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                    <a href="#">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" alt="logo">
-                    </a>
-            </div>
-            <nav id="menu-principal" class="menu-container">
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#">Menu1</a>
-                    </li>
-                    <li class="menu-item current-item">
-                        <a href="#">Menu2</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Menu3</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Menu4</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-</body>
+	<body>
+		<header>
+			<div class="container">
+                <section class="container-header">
+                    <div class="logo">
+                            <a href="#">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" alt="logo">
+                            </a>
+                    </div>
+                    <nav id="menu-principal" class="menu-container">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#">Menu1</a>
+                            </li>
+                            <li class="menu-item current-item">
+                                <a href="#">Menu2</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Menu3</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Menu4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+			</div>
+		</header>
+		<main>
+			<section id="section1">
+				<div class="container">
+					<h1>Titre de la section</h1>
+					<p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut <a href="#">labore</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<a href="#" class="button-std">En savoir plus</a>
+				</div>
+			</section>
+			<section id="section2">
+				<div class="container">
+					<h1>Titre de la section</h1>
+					<p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut <a href="#">labore</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<a href="#" class="button-ghost">En savoir plus</a>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="logo">
+						<a href="#">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" alt="logo">
+						</a>
+				</div>
+				<nav  id="menu-secondary" class="menu-container">
+					<ul class="menu">
+						<li class="menu-item">
+							<a href="#">À propos</a>
+						</li>
+						<li class="menu-item current-item">
+							<a href="#">Concept</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">Documentation</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">Nous joindre</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+				</div>
+			</div>
+
+		</footer>
+	</body>
 </html>

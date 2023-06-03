@@ -1,10 +1,7 @@
-/**  --------------------------------------- **/
-/**  VARIABLES **/
-/** --------------------------------------- **/
 /** GENERAL **/
 * {
   box-sizing: border-box;
-  background-color: #dddddd;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -27,86 +24,47 @@ img {
 ul.menu {
   list-style: none;
   padding: 0;
-  /** --------------------------------------- **/
 }
 
-/** TYPOGRAPHY **/
-body {
-  color: #000;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  background-color: #fff;
+section {
+  padding: 2rem 0;
 }
 
-a {
+.container-header, nav, .menu {
+  display: flex;
+}
+
+.container-header {
+  justify-content: space-between;
+}
+
+nav {
+  align-items: center;
+}
+
+.menu-item a {
+  color: #2f2f2f;
   text-decoration: none;
-  color: #dfb52e;
-  transition: all 0.3s;
+  padding: 1rem;
 }
-a:hover {
-  color: #5c5c5c;
-}
-
-.button-std {
-  border-radius: 0.2em;
-  padding: 0.5em 1em;
-  margin: 0.6em;
-  display: inline-block;
-  transition: all 0.5s;
-  background-color: #dfb52e;
-  border: 1px solid #434343;
-  color: #fff;
+.menu-item a:hover {
+  color: #7c7c7c;
+  font-weight: 700;
 }
 
-.button-ghost {
-  border-radius: 0.2em;
-  padding: 0.5em 1em;
-  margin: 0.5em;
-  display: inline-block;
-  transition: all 0.5s;
-  background-color: #fff;
-  border: 1px solid #5c5c5c;
-  color: #5c5c5c;
+.current-item {
+  color: #2f2f2f;
+  border-bottom: 1px solid #2f2f2f;
+  padding-bottom: 0.5rem;
 }
 
-/** --------------------------------------- **/
-/** HEADER **/
 .logo {
   float: left;
   width: 100%;
-  max-width: 180px;
+  max-width: 100px;
   padding: 1rem 0;
   transition: all 0.2s;
 }
 .logo:hover {
   opacity: 0.8;
-}
-
-header {
-  background-color: #6cde4c;
-}
-
-/** --------------------------------------- **/
-/** NAVIGATION **/
-nav {
-  float: right;
-}
-
-.menu-item {
-  float: left;
-  margin-right: 0.5em;
-  position: relative;
-}
-.menu-item a {
-  display: block;
-  padding: 0.5em 1em;
-  text-transform: uppercase;
-  transition: all 0.5s;
-}
-.menu-item a:hover {
-  color: #fff;
-}
-.menu-item.current-item a {
-  color: #5c5c5c;
-  border-bottom: 1px solid #dfb52e;
 }
