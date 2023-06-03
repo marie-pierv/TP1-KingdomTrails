@@ -1,8 +1,9 @@
-/** GENERAL **/
+@import 'mixins'
 
 * 
   box-sizing: border-box
-  font-family: 'Roboto', sans-serif
+  font-family: 'Roboto', sans-serif 
+  margin: 0
 
 img
   max-width: 100%
@@ -16,13 +17,20 @@ img
   &:after
     clear: both
     content: " "
-    display: block
-  
+    display: block 
 
-ul.menu
-  list-style: none
-  padding: 0
+%backsection
+  padding: 3rem 0 3rem 0
 
+#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9
+  @extend %backsection
 
-section
-  padding: 2rem 0
+#section1, #section5, #section7, #section9
+  background-color: $color-section
+
+#section3
+  background-color: darken($color-section, 80)
+
+.trio-card
+  display: flex
+  justify-content: space-between
