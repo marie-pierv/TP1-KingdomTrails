@@ -1,0 +1,13 @@
+@mixin fonctiona ($textcolor:#ffffff)
+    color: $textcolor
+    text-decoration: none
+    padding: $padding-base
+    &:hover
+        color: lighten($color-text, 30)
+        font-weight: 700
+        
+@mixin fonctionacurrent ($textcolor:#ffffff)
+    color: $textcolor
+    border-bottom: 1px solid $textcolor
+    padding-bottom: 0.5rem
+        
