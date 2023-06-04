@@ -147,3 +147,45 @@ iframe {
   padding: 2rem;
   margin: 2rem;
 }
+
+label {
+  display: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.form--modif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-control input, .input-control textarea {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}

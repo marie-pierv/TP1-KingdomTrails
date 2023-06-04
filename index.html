@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<script src="js/script.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="style/css/style.css"/>
 </head>
@@ -103,12 +104,30 @@
 							<div class="card__text">
 								<h3>Un formulaire</h3>
       							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, nesciunt!</p>
-      							<form action="">
-									Nom de famille
-									Prénom à droite
-									Email
-									Message
-									Submit
+      							<form id="form" action="confirmation.html" onsubmit="return validateForm()" novalidate>
+									<div class="form--modif">
+										<div class="input-control"> 
+											<label for="nom">Nom de famille</label>
+											<input id="form__nom" name="nom" type="text" placeholder="Nom de famille" required>
+											<div class="errorMessage"></div>
+										</div>
+										<div class="input-control"> 
+											<label for="prenom">Prénom</label>
+											<input id="form__prenom" name="prenom" type="text" placeholder="Prénom">
+											<div class="errorMessage"></div>
+										</div>
+									</div>
+									<div class="input-control"> 
+										<label for="email">Email</label>
+										<input id="form__email" name="email" type="text" placeholder="Courriel">
+										<div class="errorMessage"></div>
+									</div>
+									<div class="input-control"> 
+										<label id="champs" for="message">Message</label>
+										<textarea id="form__message" name="txtMessage" placeholder="Message"></textarea>
+										<div class="errorMessage"></div>
+									</div>
+									<button class="button--form" type="submit">Sign up</button>
 								</form>
 							</div>
 						</div>
