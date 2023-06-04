@@ -1,10 +1,10 @@
 const validateForm = () => {
 
     const form = document.getElementById('form'); // on manipule la valeur de l'input et non l'input ou le contenant
-    const nom = document.getElementById('nom'); 
-    const prenom = document.getElementById('prenom'); 
-    const email = document.getElementById('email');
-    const message = document.getElementById('message');
+    const nom = document.getElementById('form__nom'); 
+    const prenom = document.getElementById('form__prenom'); 
+    const email = document.getElementById('form__email');
+    const message = document.getElementById('form__message');
 
     const nomValue = nom.value.trim();  // enlève les espaces vides
     const prenomValue = prenom.value.trim();

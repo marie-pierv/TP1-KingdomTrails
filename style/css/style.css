@@ -38,6 +38,15 @@ img {
   justify-content: space-between;
 }
 
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section3--h2 {
+  padding: 0 2rem;
+}
+
 h1 {
   padding: 0 0 1.2rem 0;
   font-family: "Roboto Slab", serif;
@@ -48,10 +57,36 @@ h2 {
   font-size: 1.4rem;
   font-weight: 600;
   text-align: center;
+  padding: 1rem 0;
 }
 
-.trio-card p {
+.trio-card, .paragraphe--center, .section3--h1 {
   text-align: center;
+}
+
+.section3--h2 {
+  color: #fff;
+}
+
+.paragraphe--center {
+  margin: 0 10%;
+}
+
+.button--gold {
+  background-color: #dfb52e;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+.button--form {
+  background-color: #dfb52e;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  border: none;
+  font-size: 1rem;
 }
 
 .container-header, nav, .menu {
@@ -127,31 +162,24 @@ iframe {
   position: relative;
   overflow: hidden;
 }
-
-iframe {
-  background-attachment: scroll;
-  position: absolute;
-  width: 100%;
-}
-
-.card__overlay {
-  position: relative;
-  width: 100%;
-}
-
 .card__text {
   position: relative;
   background-color: white;
   width: 40%;
   float: right;
   padding: 2rem;
-  margin: 2rem;
+  margin: 0.7rem;
+}
+.card--iframe {
+  background-attachment: scroll;
+  position: absolute;
+  width: 100%;
 }
 
 label {
   display: none;
 }
-form {
+#form-contact {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
@@ -163,7 +191,7 @@ form {
   justify-content: space-between;
 }
 
-.input-control input, .input-control textarea {
+.input-control-generique, .input-control textarea, .input-control input {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
@@ -172,20 +200,28 @@ form {
   width: 100%;
 }
 
-.input-control input:focus {
+.input-control:focus {
   outline: 0;
 }
-
-.input-control.success input {
-  border-color: #09c372;
-}
-
-.input-control.error input {
-  border-color: #ff3860;
-}
-
 .input-control .errorMessage {
   color: #ff3860;
   font-size: 9px;
   height: 13px;
+}
+.input-control.success input {
+  border-color: #09c372;
+}
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+#form-recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form-recherche #form__recherche {
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 50%;
 }

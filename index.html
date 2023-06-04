@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 <head>
-	<title>Exercices sass</title>
+	<title>Kingdom Trails</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,15 +47,20 @@
 			</section>
 			<section id="section2">
 				<div class="container">
-					<h1>Notre mission</h1>
-					<p>Court texte sur notre mission</p>
-					<a href="#" class="button-gold">une barre de recherche</a>
+					<h2>Notre mission</h2>
+					<p class="paragraphe--center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eius dignissimos vel quam praesentium magni perferendis corporis voluptatibus amet ipsa.</p>
+					<form id="form-recherche" action="#">
+						<label for="recherche">Rechercher</label>
+						<input id="form__recherche" name="recherche" type="text" placeholder="Rechercher" required>
+						<a href="#" class="button--gold">Rechercher</a>
+					</form>
+				</div>
 				</div>
 			</section>
 			<section id="section3">
-				<div class="container">
-					<h1>Voir la carte des sentiers</h1>
-					<a href="#" class="button-gold">Télécharger la carte des sentiers</a>
+				<div class="container section3">
+					<h2 class="section3--h2">Voir la carte des sentiers</h2>
+					<a href="#" class="button--gold">Télécharger</a>
 				</div>
 			</section>
 			<section id="section4">
@@ -99,12 +104,12 @@
 			<section id="section8">
 				<div class="container test">
 					<div class="card">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2753.509073327467!2d-72.57049728684342!3d46.35928697098225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc7c8c0519481ed%3A0x927eff5cdafb554!2sC%C3%A9gep%20de%20Trois-Rivi%C3%A8res!5e0!3m2!1sfr!2sca!4v1685827217667!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe class="card--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2753.509073327467!2d-72.57049728684342!3d46.35928697098225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc7c8c0519481ed%3A0x927eff5cdafb554!2sC%C3%A9gep%20de%20Trois-Rivi%C3%A8res!5e0!3m2!1sfr!2sca!4v1685827217667!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						<div class="card__overlay">
 							<div class="card__text">
 								<h3>Un formulaire</h3>
       							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, nesciunt!</p>
-      							<form id="form" action="confirmation.html" onsubmit="return validateForm()" novalidate>
+      							<form id="form-contact" action="confirmation.html" onsubmit="return validateForm()" novalidate>
 									<div class="form--modif">
 										<div class="input-control"> 
 											<label for="nom">Nom de famille</label>
