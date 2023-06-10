@@ -23,7 +23,7 @@
                     </div>
                     <nav>
                         <ul class="menu">
-                            <li class="menu-item current-item" href="#section3">
+                            <li class="menu-item current-item">
                                 <a href="#section2">Notre mission</a>
                             </li>
                             <li class="menu-item">
@@ -54,11 +54,10 @@
 					<h2>Notre mission</h2>
 					<p class="paragraphe--center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eius dignissimos vel quam praesentium magni perferendis corporis voluptatibus amet ipsa.</p>
 					<form id="form-recherche" action="#">
-						<label for="recherche">Rechercher</label>
+						<label for="form__recherche">Rechercher</label>
 						<input id="form__recherche" name="recherche" type="text" placeholder="Rechercher" required>
 						<a href="#" class="button--gold">Rechercher</a>
 					</form>
-				</div>
 				</div>
 			</section>
 			<section id="section3">
@@ -189,23 +188,23 @@
       							<form id="form-contact" action="confirmation.html" onsubmit="return validateForm()" novalidate>
 									<div class="form--modif">
 										<div class="input-control"> 
-											<label for="nom">Nom de famille</label>
+											<label for="form__nom">Nom de famille</label>
 											<input id="form__nom" name="nom" type="text" placeholder="Nom de famille" required>
 											<div class="errorMessage"></div>
 										</div>
 										<div class="input-control"> 
-											<label for="prenom">Prénom</label>
+											<label for="form__prenom">Prénom</label>
 											<input id="form__prenom" name="prenom" type="text" placeholder="Prénom">
 											<div class="errorMessage"></div>
 										</div>
 									</div>
 									<div class="input-control"> 
-										<label for="email">Email</label>
+										<label for="form__email">Email</label>
 										<input id="form__email" name="email" type="text" placeholder="Courriel">
 										<div class="errorMessage"></div>
 									</div>
 									<div class="input-control"> 
-										<label id="champs" for="message">Message</label>
+										<label id="champs" for="form__message">Message</label>
 										<textarea id="form__message" name="txtMessage" placeholder="Message"></textarea>
 										<div class="errorMessage"></div>
 									</div>
