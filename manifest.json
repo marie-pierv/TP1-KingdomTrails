@@ -3,7 +3,7 @@
     "short_name": "PWA",
     "icons": [{
         "src": "img/maskable_icon_x48.png",
-        "sizes": "48x48 px",
+        "sizes": "48x48",
         "type": "image/PNG"
     },
     {
