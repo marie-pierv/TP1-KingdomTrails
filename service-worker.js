@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v8';
+const CACHE_NAME = 'static-cache-v9';
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -28,20 +28,20 @@ self.addEventListener('fetch', (evt) => {
 console.log('[ServiceWorker] Fetch', evt.request.url);
 //Add fetch event handler here.
 self.addEventListener('fetch', (evt) => {
-    console.log('[ServiceWorker] Fetch', evt.request.url);
-    //Add fetch event handler here.
-    if (evt.request.mode !== 'navigate') {
-    // Not a page navigation, bail.
-    return;
-    }
-    evt.respondWith(
+console.log('[ServiceWorker] Fetch', evt.request.url);
+//Add fetch event handler here.
+if (evt.request.mode !== 'navigate') {
+// Not a page navigation, bail.
+return;
+}
+evt.respondWith(
     fetch(evt.request)
-    .catch(() => {
-    return caches.open(CACHE_NAME)
-    .then((cache) => {
-    return cache.match('marie-pierv/TP1-VermetteMarie-Pier/offline.html');
-    });
-    })
-    );
+        .catch(() => {
+            return caches.open(CACHE_NAME)
+                .then((cache) => {
+            return cache.match('marie-pierv/TP1-VermetteMarie-Pier/offline.html');
+            });
+            })
+        );
     });
 });
