@@ -1,14 +1,3 @@
-// Register service worker.
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js')
-    .then((reg) => {
-    console.log('Service worker registered.', reg);
-    });
-    });
-    }
-
-
 const validateForm = () => {
 
     const form = document.getElementById('form'); // on manipule la valeur de l'input et non l'input ou le contenant
