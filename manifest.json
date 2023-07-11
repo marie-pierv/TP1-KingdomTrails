@@ -4,23 +4,26 @@
     "icons": [{
         "src": "img/maskable_icon_x48.png",
         "sizes": "48x48",
-        "type": "image/PNG"
+        "type": "image/PNG",
+        "purpose": "any maskable"
     },
     {
         "src": "img/maskable_icon_x192.png",
         "sizes": "192x192", 
-        "type": "image/PNG"
-
+        "type": "image/PNG",
+        "purpose": "any maskable"
     },
     {
         "src": "img/maskable_icon_x144.png",
         "sizes": "144x144",
-        "type": "image/PNG"
+        "type": "image/PNG",
+        "purpose": "any maskable"
     },
     {
         "src": "img/maskable_icon_x512.png",
         "sizes": "512x512",
-        "type": "image/PNG"
+        "type": "image/PNG",
+        "purpose": "any maskable"
     }],
     "start_url": "index.html",
     "display": "standalone",
